@@ -1,5 +1,6 @@
 node_modules
 .DS_Store*
 .hubot_history
-wearedoingnlpstuff-741abcef07ba.json
 lib/
+credentials.tar.gz
+client-secret.json
