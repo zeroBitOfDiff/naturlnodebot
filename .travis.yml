@@ -10,8 +10,7 @@ before_install:
   -in credentials.tar.gz.enc -out credentials.tar.gz -d
 - if [ ! -d "${GAE_PYTHONPATH}" ]; then python scripts/fetch_gae_sdk.py $(dirname
   "${GAE_PYTHONPATH}"); fi
-- if [ ! -d ${HOME}/google-cloud-sdk ]; then curl https://sdk.cloud.google.com | bash;
-  fi
+- curl https://sdk.cloud.google.com | bash;
 - tar -xzf credentials.tar.gz
 - mkdir -p lib
 # Here we use the decrypted service account credentials to authenticate the command line tool
